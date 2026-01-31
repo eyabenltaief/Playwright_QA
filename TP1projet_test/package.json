@@ -1,0 +1,21 @@
+{
+  "name": "tp1projet_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:edge": "playwright test --project=edge --headed tests/wikipedia.test.ts",
+    "test:ui": "playwright test --ui",
+    "report:edge": "playwright test --project=edge --reporter html --headed tests/wikipedia.test.ts"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  }
+}
+
