@@ -45,3 +45,11 @@ npx playwright codegen wikipedia.org
 npx playwright test --reporter html
 ```
 - Trace : https://trace.playwright.dev/
+
+## TP2
+- "mocker" le réseau : laisser l'application contacter un vrai backend, et renvoie immédiatement les données que vous avez définies dans votre test.
+- snapshots : détecter des changements ou des erreurs qui ont été faites notament avec les CSS. L'idée c'est de faire une capture de la page à l'instant t et ensuite de faire la même capture à un autre  instant pour comparer les choses.
+Mise à jour les snapshots:
+```bash
+npx playwright test --update-snapshots html
+```
