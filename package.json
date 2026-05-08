@@ -20,7 +20,7 @@
   },
   "scripts": {
     "test": "playwright test",
-    "test:edge": "playwright test --project=edge --headed tests/grafikart.test.ts",
+    "test:edge": "playwright test --project=edge --headed tests/test.test.ts",
     "test:ui": "playwright test --ui",
     "report:edge": "playwright test --project=edge --reporter html --headed tests/wikipedia.test.ts"
   },
@@ -77,6 +77,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.1",
     "http-server": "^14.1.1"
   }
 }
