@@ -7,13 +7,15 @@ Projet de tests automatisés avec l'outil Playwright
 - Playwright Test for VSCode
 ## Installer Playwright
 ```bash
+# Installer les dépendances Node.js
+npm install
+npm i --save-dev @types/node
 # Histoire et l'instancier le package .json
 npm init -Y 
 # Installer les dépendances de PLaywright
 npm add -D @playwright/test 
-# Installer les différents dépendances qui nécessaires pour faire fontionner Playwright ou kes navigateurs que vous avez sélectionné
+# Installer les navigateurs
 npx playwright install 
-npx playwright test # tester le projet
 ```
 ## Créer les fichiers de tests
 - Architecture recommandé: Ajouter un nouveau dossier sur le projet 'tests' et les fichiers de tests ajouter sur ce dossier.
